@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_obat"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp"
+    android:onClick="openDetailObat"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageObat"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/product1_diatabs" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="16dp"
+
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:fontFamily="@font/overpass"
+            android:id="@+id/textNamaObat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:textSize="16sp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:fontFamily="@font/overpass"
+            android:id="@+id/textJenisObat"
+            android:layout_width="wrap_content"
+            android:textColor="@color/text_light"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:fontFamily="@font/overpass"
+            android:id="@+id/textHargaObat"
+            android:layout_width="wrap_content"
+            android:textColor="@color/text"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/DetailObat"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Detail"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="@drawable/btn_add_to"-->
+<!--        android:textSize="14sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:onClick="openDetailObat"/>-->
+</LinearLayout>

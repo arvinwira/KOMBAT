@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "361675378824",
+    "project_id": "login-register-firebase-afed1",
+    "storage_bucket": "login-register-firebase-afed1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361675378824:android:0a4e58ab9c08c6b8ec8f3d",
+        "android_client_info": {
+          "package_name": "com.example.kombat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF-dQadj7BSK25wYVA9W6_C-K3ztTAUzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361675378824:android:22e07e412153c960ec8f3d",
+        "android_client_info": {
+          "package_name": "com.example.kombat2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF-dQadj7BSK25wYVA9W6_C-K3ztTAUzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

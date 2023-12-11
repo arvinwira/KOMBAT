@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".Register">
+
+    <TextView
+        android:fontFamily="@font/overpass"
+        android:layout_alignParentLeft="true"
+        android:text="Buat Akun"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="180dp"
+        android:gravity="center">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:indeterminateTint="@color/primary"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <Button
+            android:fontFamily="@font/overpass"
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/btn_add_to"
+            android:textColor="@color/white"
+            android:text="Buat Akun"
+            android:textSize="20dp" />
+
+        <TextView
+            android:fontFamily="@font/overpass"
+            android:id="@+id/loginNow"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:text="Sudah punya akun? Masuk"
+            android:textColor="@color/primary_opacity"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:fontFamily="@font/overpass"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="423dp"
+        android:hint=" Kata Sandi" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:fontFamily="@font/overpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="303dp"
+        android:hint=" Nomor Handphone" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:fontFamily="@font/overpass"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="503dp"
+        android:hint=" Nama Pengguna" />
+
+
+</RelativeLayout>
+
+

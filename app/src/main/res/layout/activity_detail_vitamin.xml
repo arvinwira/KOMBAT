@@ -1,0 +1,151 @@
+<!-- activity_detail_obat.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailVitaminActivity">
+
+    <!-- Komponen-komponen layout detail produk -->
+    <!-- ImageView, TextViews, Buttons, dll. -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:onClick="klikKembali"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/baseline_arrow_back_black" />
+
+                    <ImageView
+                        android:id="@+id/detailVitaminImageView"
+                        android:layout_width="260dp"
+                        android:layout_height="200dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="28dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/product1_diatabs"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/detailNamaVitaminTextView" />
+
+                    <TextView
+                        android:id="@+id/detailNamaVitaminTextView"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/detailVitaminImageView"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="18dp"
+                        android:text="Nama Obat"
+                        android:textColor="@color/text"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/imageView11"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/detailDeskripsiVitaminTextView"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/detailNamaVitaminTextView"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="32dp"
+                        android:text="Deskripsi Obat"
+                        android:textColor="@color/text_light"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/detailVitaminImageView" />
+
+                    <TextView
+                        android:id="@+id/detailHargaVitaminTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/detailDeskripsiVitaminTextView"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="32dp"
+                        android:text="Rp. 15.000"
+                        android:textColor="@color/text"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/detailDeskripsiVitaminTextView" />
+
+                    <TextView
+                        android:id="@+id/wishlistVitaminButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/detailHargaVitaminTextView"
+                        android:layout_marginStart="124dp"
+                        android:layout_marginTop="32dp"
+                        android:drawableStart="@drawable/baseline_add_box_24"
+                        android:text="Tambah Ke Wishlist"
+                        android:textColor="#006AFF"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toEndOf="@+id/detailHargaVitaminTextView"
+                        app:layout_constraintTop_toBottomOf="@+id/detailDeskripsiVitaminTextView" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/keranjangVitaminButton"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="104dp"
+                        android:layout_marginEnd="107dp"
+                        android:layout_marginBottom="44dp"
+                        android:background="@drawable/btn_add_to"
+                        android:text="Keranjang"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Tombol Wishlist -->
+
+    <!-- Tombol Keranjang -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
