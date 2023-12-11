@@ -1,1 +1,4 @@
 # KOMBAT
+
+
+GAS JALAN JALAN
